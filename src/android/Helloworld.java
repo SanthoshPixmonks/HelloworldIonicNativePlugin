@@ -1,4 +1,4 @@
-package cordova-plugin-helloworld;
+package cordova.plugin.helloworld;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
