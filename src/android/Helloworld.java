@@ -13,10 +13,10 @@ import org.json.JSONObject;
 public class Helloworld extends CordovaPlugin {
 
     @Override
-    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+    public boolean execute(String action, String args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("coolMethod")) {
-            String message = args.getString(0);
-            this.coolMethod(message, callbackContext);
+            // String message = args.getString(0);
+            this.coolMethod(args, callbackContext);
             return true;
         }
         return false;
